@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-lg-12">
+        <p>Student final year project at Czech University of Life Sciences of Prague.</p>
+        <p>
+        <ul class="list-inline">
+            <li><a href="logAccess.php">Logs</a></li>
+            <li><a href="faqEditor.php">FAQ Editor</a></li>
+        </ul>
+        </p>
+        <?php session_start(); if (!empty($_SESSION['user'])) {echo '<p><a href="bin/logout.php">Log Out</a> </p>';}
+        ?>
+    </div>
+</div>
+<?php require_once 'bin/seeker.php'; ?>
